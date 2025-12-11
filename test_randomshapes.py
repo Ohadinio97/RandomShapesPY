@@ -8,7 +8,6 @@ import random
 
 class TestShapes(unittest.TestCase):
 
-
     def test_square(self):
         side = 4
         square = Square(side)
@@ -22,6 +21,8 @@ class TestShapes(unittest.TestCase):
         with self.assertRaises(ValueError):
             Square(-5)
 
+
+    
     def test_circle(self):
         radius = 3
         circle = Circle(radius)
@@ -36,6 +37,7 @@ class TestShapes(unittest.TestCase):
             Circle(-7)
 
 
+    
     def test_triangle(self):
         side_a = 3
         side_b = 4
@@ -58,6 +60,8 @@ class TestShapes(unittest.TestCase):
         with self.assertRaises(ValueError):
             Triangle(1, 2, 10)  
 
+
+    
     def test_trapezoid(self):
         base_bottom = 10
         base_top = 4
@@ -88,6 +92,7 @@ class TestShapes(unittest.TestCase):
             Trapezoid(10, 4, 20)  # Side length too long
 
 
+    
     # Test for random shape generator
     def test_random_shape(self):
 
@@ -108,4 +113,6 @@ class TestShapes(unittest.TestCase):
         
 
 if __name__ == "__main__":
+    
     unittest.main()
+
