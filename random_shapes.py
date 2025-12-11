@@ -65,6 +65,7 @@ class Circle(Shape):
 
 
 class Triangle(Shape):
+    
     def __init__(self, side_a : float, side_b: float, side_c: float):
         if side_a <=0 or side_b <=0:
             raise ValueError("Sides must be positive.")
@@ -149,9 +150,11 @@ def random_shape():
         return Trapezoid(base_bottom, base_top, side_length)
 
 def main():
+    
     shape = random_shape()
     print(shape)
 
 
 if __name__ == "__main__":
+
     main()
